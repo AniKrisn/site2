@@ -3,17 +3,18 @@
 body, html {
     box-sizing: border-box;
     margin: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .img {
-    background-image: url(site3.png);
+    background-image: url(s3w.png);
     height: 80vh;
     width: 80vh;
     background-size: cover;
+    -ms-box-orient: horizontal;
 }
 
 .img > a#produce {
@@ -23,7 +24,7 @@ body, html {
     letter-spacing: -0.05em;
     transform: translate(-0.7vh, 30vh) rotate(-40deg);
     text-decoration: none;
-    color: rgb(253, 82, 82);
+    color: #F9F1E4;
 }
 
 .img > a#consume {
@@ -31,8 +32,19 @@ body, html {
     font-family: 'IM Fell DW Pica', serif;
     font-size: 8vh;
     letter-spacing: -0.05em;
-    transform: translate(-25vh, 66vh) rotate(-40.5deg);
+    transform: translate(-25vh, 65.5vh) rotate(-40deg);
     transform-origin: bottom left;
     text-decoration: none;
-    color: rgb(253, 82, 82);
+    color: #F9F1E4;
+}
+
+.img > a#socials {
+    display: inline-block;
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 8vh;
+    letter-spacing: -0.05em;
+    transform: translate(78vh, 59.2vh) rotate(-90deg);
+    transform-origin: bottom left;
+    text-decoration: none;
+    color: #282B3C;
 }
