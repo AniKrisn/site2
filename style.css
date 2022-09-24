@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+
+body, html {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    background-image: url(site3.png);
+    height: 80vh;
+    width: 80vh;
+    background-size: cover;
+}
+
+.img > a#produce {
+    display: inline-block;
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 8vh;
+    letter-spacing: -0.05em;
+    transform: translate(-0.7vh, 30vh) rotate(-40deg);
+    text-decoration: none;
+    color: rgb(253, 82, 82);
+}
+
+.img > a#consume {
+    display: inline-block;
+    font-family: 'IM Fell DW Pica', serif;
+    font-size: 8vh;
+    letter-spacing: -0.05em;
+    transform: translate(-25vh, 66vh) rotate(-40.5deg);
+    transform-origin: bottom left;
+    text-decoration: none;
+    color: rgb(253, 82, 82);
+}
