@@ -9,15 +9,14 @@ body, html {
     transform: translate(-50%, -50%);
 }
 
-.img {
-    background-image: url(s3w.png);
+.index-img {
+    background-image: url(pics/s3w.png);
     height: 80vh;
     width: 80vh;
     background-size: cover;
-    -ms-box-orient: horizontal;
 }
 
-.img > a#produce {
+.index-img > a#produce {
     display: inline-block;
     font-family: 'IM Fell DW Pica', serif;
     font-size: 8vh;
@@ -25,9 +24,10 @@ body, html {
     transform: translate(-0.7vh, 30vh) rotate(-40deg);
     text-decoration: none;
     color: #F9F1E4;
+    transition: color 0.2s ease-in-out 0.1s;
 }
 
-.img > a#consume {
+.index-img > a#consume {
     display: inline-block;
     font-family: 'IM Fell DW Pica', serif;
     font-size: 8vh;
@@ -36,15 +36,44 @@ body, html {
     transform-origin: bottom left;
     text-decoration: none;
     color: #F9F1E4;
+    transition: color 0.2s ease-in-out 0.1s;
 }
 
-.img > a#socials {
+.index-img > a#socials {
     display: inline-block;
     font-family: 'IM Fell DW Pica', serif;
     font-size: 8vh;
     letter-spacing: -0.05em;
-    transform: translate(78vh, 59.2vh) rotate(-90deg);
+    transform: translate(60vh, 48vh) rotate(-40deg);
     transform-origin: bottom left;
     text-decoration: none;
     color: #282B3C;
+    mix-blend-mode: hard-light;
+    transition: color 0.2s ease-in-out 0.1s;
+}
+
+.index-img > a#consume:hover, .index-img > a#socials:hover, .index-img > a#produce:hover {
+    color: #0d29c5;
+    mix-blend-mode: exclusion;
+}
+
+.socials-img {
+    background-image: url(pics/socials.png);
+    height: 80vh;
+    width: 80vh;
+    background-size: cover;
+}
+
+#boat {
+    background-image: url(pics/boat.jpg);
+    height: 21vh;
+    width: 21vh;
+    border-radius: 50%;
+    background-size: cover;
+    transform: translate(40.3vh, 3.4vh);
+    transition: 0.8s ease-in-out 0.1s;
+}
+
+#boat:hover {
+    opacity: 0;
 }
